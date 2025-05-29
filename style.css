@@ -1,0 +1,106 @@
+/* Easier theme colors */
+:root {
+    --color-accent: #0fa3b1;
+    --color-bg: #f9f7f3;
+    --color-text: #303835;
+    --color-text-secondary: #0f6870;
+    --color-accent-hover: #eddea4;
+  }
+
+/* Use Roboto throughout */
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: var(--color-bg);
+    color: 	var(--color-text);
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .profile-pic-emoji {
+    font-size: 80px;          /* big emoji */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /*background-color: var(--color-accent);*/
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    user-select: none;        /* prevent emoji selection */
+    /*box-shadow: 0 0 8px rgba(0,0,0,0.1);*/
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .bio {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    margin: 12px 0 30px;
+    line-height: 1.5;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--color-accent);
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .links a:hover {
+    background-color: var(--color-accent-hover);
+    
+  }
+  
+  .material-icons-outlined {
+    font-size: 22px;
+    vertical-align: middle;
+    line-height: 1;
+  }
+  
+  /* Responsive: mobile tweaks */
+  @media (max-width: 480px) {
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    .links a {
+      font-size: 15px;
+      padding: 12px 16px;
+    }
+  
+    .material-icons-outlined {
+      font-size: 20px;
+    }
+  }
+  
